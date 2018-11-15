@@ -1,0 +1,53 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<jsp:include page="adminhome.jsp"></jsp:include>
+<div class="banner" style="background-image: url('images/black.jpg');"> 
+
+ <form action="intender" >
+<center><h1 style="color:white;">NEW TENDER</h1></center>
+
+         	<div class="vali-form">
+           
+           <div>&nbsp;&nbsp;<span id='dep1'></span></div>
+             <div class="clearfix"> </div>
+              <div class="col-md-6 form-group1 group-mail">
+              <label class="control-label" >Title</label>
+              <input type="text" name="title"  placeholder="title" class="form-control" style="color:Black;" required>
+            </div>
+            <div class="clearfix"> </div>
+            <div class="col-md-6 form-group1 group-mail">
+              <label class="control-label" ">Published Date</label>
+              <input type="date" name="pdate"  min="${dt}" max="${cud }" class="form-control" style="color:Black;" required>
+            </div>
+             <div class="clearfix"> </div>
+              <div class="col-md-6 form-group1 group-mail">
+              <label class="control-label" >Closing Date</label>
+              <input type="date" name="cdate" class="form-control" style="color:Black;" required>
+            </div>
+             
+               <div class="clearfix"> </div>
+                 <div class="col-md-6 form-group1">
+              <label class="control-label" >Description</label>
+              <textarea type="text" name="description"  class="form-control" placeholder="Description" style="color:Black;" required></textarea>
+            </div> 
+               <div class="clearfix"></div>
+            
+            <div class="col-md-12 form-group">
+            
+              <button type="submit" name="edit" class="btn btn-primary">Submit</button>
+              
+            </div>
+          <div class="clearfix"> </div>
+      
+   </div> </form></div>
+ 	<!---->
+ 
+</body>
+</html>
